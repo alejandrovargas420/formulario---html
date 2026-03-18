@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Formulario de Registro</title>
+</head>
+
+<body>
+
+<form>
+
+<h2>Formulario de registro</h2>
+
+<select required>
+<option value="">Seleccione su tipo de documento</option>
+<option>CC</option>
+<option>TI</option>
+<option>CE</option>
+</select>
+
+<br><br>
+
+<input type="text" placeholder="Ingrese su número de documento"
+pattern="[0-9]{6,12}" required
+title="Solo números entre 6 y 12 dígitos">
+
+<br><br>
+
+<input type="text" placeholder="Ingrese su nombre"
+pattern="[A-Za-z]{3,64}" required
+title="Entre 3 y 64 letras">
+
+<br><br>
+
+<input type="text" placeholder="Ingrese su apellido"
+pattern="[A-Za-z]{3,64}" required
+title="Entre 3 y 64 letras">
+
+<br><br>
+
+<input type="text" placeholder="Ingrese su dirección" required>
+
+<br><br>
+
+<input type="tel" placeholder="Ingrese su teléfono fijo"
+pattern="[0-9]{7}" required
+title="Debe tener 7 números">
+
+<br><br>
+
+<input type="tel" placeholder="Ingrese su teléfono celular"
+pattern="[0-9]{10}" required
+title="Debe tener 10 números">
+
+<br><br>
+
+<input type="email" placeholder="Ingrese su correo"
+pattern="[A-Za-z0-9._-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}"
+required>
+
+<br><br>
+
+<input type="text" placeholder="Ingrese su usuario"
+pattern="[A-Za-z]{3,14}[0-9]{0,2}"
+title="Entre 3 y 16 caracteres, letras y hasta 2 números al final"
+required>
+
+<br><br>
+
+<input type="password"
+placeholder="Ingrese su contraseña"
+pattern="(?=.*[A-Z])(?=(?:.*[a-z]){2,})(?=(?:.*[0-9]){5,})[A-Za-z0-9!?\-+/&$]{16}"
+title="16 caracteres con: 1 mayúscula, 2 minúsculas, 5 números y símbolos !?-+/&$"
+required>
+
+<br><br>
+
+<input type="date"
+min="2026-02-15"
+max="2026-03-06"
+required>
+
+<br><br>
+
+<input type="text" placeholder="Ingrese su hobbie">
+
+<br><br>
+
+<p>
+<input type="checkbox" required> 
+Estoy de acuerdo con <a href="#">términos y condiciones</a>
+</p>
+
+<br>
+
+<button type="submit">Registrar</button>
+<button type="reset">Limpiar</button>
+
+</form>
+
+</body>
+</html>
